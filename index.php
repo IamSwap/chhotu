@@ -5,8 +5,8 @@ use Illuminate\Http\Request;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Routing\Router;
 
-require './vendor/autoload.php';
-require './database.php';
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/config/database.php';
 
 // Initilise Container
 $container = new Container();
@@ -21,7 +21,7 @@ $events = new Dispatcher($container);
 // Create Router
 $router = new Router($events, $container);
 
-require_once './routes.php';
+require_once './app/routes.php';
 
 // send response
 $response = $router->dispatch($request);
