@@ -1,11 +1,17 @@
 <?php
 
 // Global Functions
+// You can add your global functions here
 
-// Renders views from /app/views directory
+/**
+ * View function for rendering blade templates
+ *
+ * @param string $file
+ * @param array $data
+ */
 function view($file, $data) 
 {    
-    $pathToTemplates = [__DIR__ . '/app/views'];
+    $pathToTemplates = [__DIR__ . '/resources/views'];
     $pathToCompiledTemplates = __DIR__ . '/cache/views';
 
     $fileSystem = new \Illuminate\Filesystem\Filesystem;
