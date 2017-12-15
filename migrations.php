@@ -1,7 +1,7 @@
 <?php
 
-require './vendor/autoload.php';
-require './database.php';
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/config/database.php';
 
 // User this file to write your migrations
 
