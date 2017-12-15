@@ -4,7 +4,10 @@
         "symfony/var-dumper": "^4.0",
         "illuminate/routing": "^5.5",
         "illuminate/events": "^5.5",
-        "illuminate/http": "^5.5"
+        "illuminate/http": "^5.5",
+        "illuminate/view": "^5.5",
+        "illuminate/filesystem": "^5.5",
+        "filp/whoops": "^2.1"
     },
     "autoload": {
         "psr-4": {
